@@ -1,61 +1,50 @@
 <template>
     <div>
         <v-img
-        lazy-src="https://picsum.photos/id/11/10/6"
+        
         
         max-width="100%"
         src="https://d2v80xjmx68n4w.cloudfront.net/gigs/QbVBu1625654810.jpg"
         ></v-img>
         <v-container>
-            <v-row>
-                <v-list-item dense class="px-1 my-0" two-line>
-                    <v-list-item-content>
-                        
-                        <v-list-item-subtitle dense class="pa-1 mb-n1">
-                        로고 > 로고디자인
-                        </v-list-item-subtitle>
-                        <v-list-item-title class="pt-1">
-                        <span style="fontWeight:900">미술, 디자인, 작가가 모여 감각적인 로고 제작해 드립니다.</span>
-                        </v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-            </v-row>
-            <v-row>
-                <v-rating
-                :value="4.5"
-                color="amber"
-                dense
-                half-increments
-                readonly
-                size="16"
-                ></v-rating>
+            
+            
+           
 
-                <div class="pt-1 grey--text ms-1">
-                4.5 (413)
+            <v-row class="mt-5">
+              <v-card-text class="grey--text">로고</v-card-text>
+              <v-card-title><h5>미술, 디자인, 작가가 모여 감각적인 로고 제작해 드립니다.</h5></v-card-title>
+
+              <v-card-text class="mt-5">
+                <v-row
+                  align="center"
+                  class="mx-0"
+                >
+                  <v-rating
+                    :value="4.5"
+                    color="amber"
+                    dense
+                    half-increments
+                    readonly
+                    size="14"
+                  ></v-rating>
+
+                  <div class="grey--text ms-4">
+                    4.5 (413)
+                  </div>
+                </v-row>
+
+                <div class="my-4 text-subtitle-1">
+                  11,000 원
                 </div>
-            </v-row>
-            <v-row>
-                <v-expansion-panels focusable>
-                  <v-expansion-panel
-                    v-for="(item,i) in 3"
-                    :key="i"
-                  >
-                    <v-expansion-panel-header disable-icon-rotate expand-icon="mdi-none"><h4>11,000 원</h4></v-expansion-panel-header>
-                    <v-expansion-panel-content>
-                      <div><h4>텍스트형 로고</h4></div>
-                      <div>로고시안1개+수정2회+로고응용 이미지2컷(목업)+원본파일1개</div>
-                      <div>
-                        
-                      </div>
-                      <div></div>
-                    </v-expansion-panel-content>
-                  </v-expansion-panel>
-                </v-expansion-panels>
 
+                <!-- <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div> -->
+              </v-card-text>
             </v-row>
+           
             <v-row class="pt-10">
                 <v-card class="px-5" elevation="0">
-                  <v-row>서비스설명</v-row>
+                  <v-row>서비스설명 </v-row>
                   <v-row>
                     <h5>
                       <p><br></p>
@@ -167,7 +156,7 @@
                 
             </v-row>
             <v-row>
-              <v-card>
+              <v-card elevation="0">
                 <span>수정 및 재진행</span>
                 <v-avatar
                     class="ma-0 mt-1"
@@ -192,7 +181,7 @@
               </v-card>
             </v-row>
             <v-row>
-              <v-card>
+              <v-card elevation="0">
                 <span>취소 및 환불 규정</span>
                 <v-avatar
                     class="ma-0 mt-1"
@@ -221,174 +210,158 @@
                 </h5>
               </v-card>
             </v-row>
-            <v-row>
-              <v-card>
-                <span>전문가 정보</span>
-                <v-avatar
-                    class="ma-0 mt-1"
-                    size="10"
-                    tile
-                >
-                    <v-img
-                    src="https://kmong.com/img/seller/become_seller/ic_become_seller_faq.png"
-                    max-height="10"
-                    ></v-img>
-                </v-avatar>
-                <v-card
-                    color="white"
-                    max-height="98"
-                    class="pa-0 ma-0"
-                    elevation="0"
-                    nuxt to="/"
-                >
-                    <div class="d-flex flex-no-wrap">
+            <v-row class="mt-5">
+              
+              <span>전문가 정보</span>
+                
+                
 
-                    <v-avatar
-                        class="ma-0"
-                        size="98"
-                        
-                    >
-                        <v-img
-                        src="https://d2v80xjmx68n4w.cloudfront.net/members/thumbs/x9l1S1615524470.jpg"
-                        max-height="98"
-                        ></v-img>
-                    </v-avatar>
-                    <div class="pl-3">
-                        <v-card-subtitle
-                        
-                        v-text="'로고고디자인'"
-                        ></v-card-subtitle>
+                
+              
+            </v-row>
+            <v-row class="mt-5">
+              <v-card
+                  color="white"
+                  max-height="98"
+                  
+                  elevation="0"
+                  nuxt to="/"
+              >
+                  <div class="d-flex flex-no-wrap">
 
-                        <v-row
-                        align="center"
-                        class="ml-n1 mt-2"
-                        >
-                            
-                        </v-row>
-
-                        <v-card-actions>
-                        
-
-                        <v-btn
-                            
-                            class="white ml-n2 mt-0 pa-0 pb-2"
-                            elevation="0"
-                            
-                            
-                        >
-                        <span style="fontWeight:900">접속중</span>
-                        </v-btn>
-                        </v-card-actions>
-                    </div>
-
-                    
-                    </div>
-                    <v-row>
-                      <v-col cols="3">
-                        <div>총작업개수</div>
-                        <div>1984건</div>
-                      </v-col>
-                      <v-col cols="3">
-                        <div>만족도</div>
-                        <div>99%</div>
-                      </v-col>
-                      <v-col cols="3">
-                        <div>평균응답시간</div>
-                        <div>1시간 내외</div>
-                      </v-col>
-                      <v-col cols="3">
-                        <div>회원구분</div>
-                        <div>개인</div>
-                      </v-col>
+                  <v-avatar
+                      class="ma-0"
+                      size="64"
                       
-                    </v-row>
-                </v-card>
+                  >
+                      <v-img
+                      src="https://d2v80xjmx68n4w.cloudfront.net/members/thumbs/x9l1S1615524470.jpg"
+                      max-height="98"
+                      ></v-img>
+                  </v-avatar>
+                  <div class="pl-3">
+                      <v-card-subtitle
+                      
+                      
+                      >로고고디자인</v-card-subtitle>
+
+                      <v-row
+                      align="center"
+                      class="ml-n1 mt-2"
+                      >
+                          
+                      </v-row>
+
+                      <v-card-actions>
+                      
+
+                      <v-btn
+                          
+                          class="white ml-n2 mt-0 pa-0 pb-2"
+                          elevation="0"
+                          
+                          
+                      >
+                      <span style="fontWeight:900">접속중</span>
+                      </v-btn>
+                      </v-card-actions>
+                  </div>
+
+                  
+                  </div>
+                  
+              </v-card>
+          </v-row>
+          <v-row>
+            <v-col align="center">
+              <div class="grey--text">총작업개수</div>
+              <div align="center">1984건</div>
+            </v-col>
+            <v-col align="center">
+              <div class="grey--text">만족도</div>
+              <div align="center">99%</div>
+            </v-col>
+            
+            
+          </v-row>
+          <v-row class="mt-5">
+            <span>서비스 평가</span>
+              
+              
+            
+          </v-row>
+          <v-row>
+            <v-card
+                  color="white"
+                  max-height="98"
+                  class="pa-0 ma-0"
+                  elevation="0"
+                  nuxt to="/"
+              >
+                  <div class="d-flex flex-no-wrap">
+
+                  <v-avatar
+                      class="ma-0"
+                      size="98"
+                      tile
+                  >
+                      5.0
+                  </v-avatar>
+                  <div class="pl-3">
+                      <v-card-subtitle
+                      
+                      v-text="text"
+                      ></v-card-subtitle>
+
+                      <v-row
+                      align="center"
+                      class="ml-n1 mt-2"
+                      >
+                          <v-rating
+                          :value="4.5"
+                          color="amber"
+                          dense
+                          half-increments
+                          readonly
+                          size="16"
+                          ></v-rating>
+
+                          <div class="pt-1 grey--text ms-1">
+                          
+                          </div>
+                      </v-row>
+
+                      <v-card-actions>
+                      
+
+                      <v-btn
+                          
+                          class="white ml-n2 mt-0 pa-0 pb-2"
+                          elevation="0"
+                          
+                          
+                      >
+                      <span style="fontWeight:900">1,501개의 평가</span>
+                      </v-btn>
+                      </v-card-actions>
+                  </div>
+
+                  
+                  </div>
+                  
               </v-card>
             </v-row>
             <v-row>
-              <v-card>
-                <span>서비스 평가</span>
-                <v-avatar
-                    class="ma-0 mt-1"
-                    size="10"
-                    tile
-                >
-                    <v-img
-                    src="https://kmong.com/img/seller/become_seller/ic_become_seller_faq.png"
-                    max-height="10"
-                    ></v-img>
-                </v-avatar>
-                <v-card
-                    color="white"
-                    max-height="98"
-                    class="pa-0 ma-0"
-                    elevation="0"
-                    nuxt to="/"
-                >
-                    <div class="d-flex flex-no-wrap">
-
-                    <v-avatar
-                        class="ma-0"
-                        size="98"
-                        tile
-                    >
-                        5.0
-                    </v-avatar>
-                    <div class="pl-3">
-                        <v-card-subtitle
-                        
-                        v-text="text"
-                        ></v-card-subtitle>
-
-                        <v-row
-                        align="center"
-                        class="ml-n1 mt-2"
-                        >
-                            <v-rating
-                            :value="4.5"
-                            color="amber"
-                            dense
-                            half-increments
-                            readonly
-                            size="16"
-                            ></v-rating>
-
-                            <div class="pt-1 grey--text ms-1">
-                            
-                            </div>
-                        </v-row>
-
-                        <v-card-actions>
-                        
-
-                        <v-btn
-                            
-                            class="white ml-n2 mt-0 pa-0 pb-2"
-                            elevation="0"
-                            
-                            
-                        >
-                        <span style="fontWeight:900">1,501개의 평가</span>
-                        </v-btn>
-                        </v-card-actions>
-                    </div>
-
-                    
-                    </div>
-                    <v-row>
-                      <v-col cols="12">
-                        <div>실제 컴포디를 통해 구매한 이용자들이 남긴 평가입니다.</div>
-                        
-                      </v-col>
-                      
-                      
-                    </v-row>
-                </v-card>
-              </v-card>
+              
+              <span class="text-captiop">실제 컴포디를 통해 구매한 이용자들이 남긴 평가입니다.</span>
+                
+              
+              
+              
             </v-row>
             <v-row>
-              <v-card>
-                <span>포토후기 412개</span>
+              <v-card elevation="0">
+                <span>서비스 후기 412개</span>
                 
                 <v-col>
                     <v-slide-group
@@ -438,7 +411,7 @@
               </v-card>
 
             </v-row>
-            <v-row>
+            <v-row class="pb-10">
               
                 
                 
@@ -451,7 +424,7 @@
             <v-row></v-row>
             <v-row></v-row>
             <v-row></v-row>
-            <v-row><v-card></v-card></v-row>
+            <v-row></v-row>
             <v-row></v-row>
             <v-row></v-row>
             <v-row></v-row>

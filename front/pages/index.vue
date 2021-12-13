@@ -249,13 +249,7 @@
             </v-row>
             <v-row class="mt-5 mb-5">
                 
-                    <v-img
-                    lazy-src="https://picsum.photos/id/11/10/6"
-                    contain
-                    position="center center"
-                    max-height="84"
-                    src="https://kmong.com/img/main/mobile/img_event_banner@2x.png"
-                    ></v-img>
+                    
                 
             </v-row>
             <v-row>
@@ -423,7 +417,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 a {
     text-decoration: none !important;
     color:black !important;
