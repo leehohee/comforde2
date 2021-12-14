@@ -66,7 +66,7 @@
                 <v-btn @click="onClickImageUpload" type="button">이미지등록</v-btn>
                 <div class="mt-5">
                     <div class="mb-2" v-for="(p, i) in imagePaths" :key="p" style="display: inline-block">
-                        <img :src="`http://localhost:3065/${p}`" :alt="p" style="width: 200px">
+                        <img :src="p" :alt="p" style="width: 200px">
                         <div>
                             <button @click="onRemoveImage(i)" type="button">제거</button>
                         </div>
