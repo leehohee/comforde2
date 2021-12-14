@@ -104,17 +104,17 @@
 
 
                 
-            <v-footer app>
-            <v-bottom-navigation
+            <v-footer
+            app
             v-model="value"
             absolute
-            class="white pt-3"
+            class="white"
             :style="{boxShadow: '0 -1.5px 0 0 rgb(0 0 0 / 10%)',position:'fixed', top: 'calc(100vh - 56px)',zIndex:'100', width:'100%'}"
-            grow
             
             >
-                <v-btn outlined nuxt to="/" value="home" class="white">
-                <span :style="{ fontSize:'1rem'}"><nuxt-link to="/">결제금액 : 11,000 원</nuxt-link></span>
+            
+                <v-btn nuxt to="/" value="home" class="white">
+                결제금액 : 11,000 원
                 
                 </v-btn>
                 <v-btn
@@ -123,14 +123,14 @@
                 value="home2"
                 class="yellow"
                 >
-                <span :style="{ fontSize:'1rem'}"><nuxt-link to="/orderpage">구매</nuxt-link></span>
+                구매
                 
                 </v-btn>
 
                 
 
                 
-            </v-bottom-navigation>
+            
             </v-footer>    
     </v-app>  
 </template>

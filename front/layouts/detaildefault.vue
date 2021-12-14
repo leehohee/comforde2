@@ -104,21 +104,21 @@
 
 
                 
-            <v-footer app>
-            <v-bottom-navigation
+            <v-footer
+            app
             v-model="value"
             absolute
-            class="white pt-3"
+            class="white"
             :style="{boxShadow: '0 -1.5px 0 0 rgb(0 0 0 / 10%)',position:'fixed', top: 'calc(100vh - 56px)',zIndex:'100', width:'100%'}"
-            grow
             
             >
-                <v-btn outlined nuxt to="/" value="home" class="white">
-                <span :style="{ fontSize:'1rem'}"><nuxt-link to="/">문의</nuxt-link></span>
+           
+                <v-btn nuxt to="/" value="home" class="white">
+                문의
                 
                 </v-btn>
-                <v-btn rounded nuxt to="/" value="home" class="yellow">
-                <span :style="{ fontSize:'1rem'}"><nuxt-link to="/buypage">구매</nuxt-link></span>
+                <v-btn rounded nuxt to="/buypage" value="home" class="yellow">
+                구매
                 
                 </v-btn>
 
@@ -128,7 +128,7 @@
                 
                 <v-icon>mdi-heart-outline</v-icon>
                 </v-btn>
-            </v-bottom-navigation>
+            
             </v-footer>    
     </v-app>  
 </template>
