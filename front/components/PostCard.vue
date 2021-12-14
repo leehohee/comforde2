@@ -91,11 +91,11 @@ export default {
             return this.liked ? 'mdi-heart' : 'mdi-heart-outline';
         },
     },
-    fetch() {
-        this.$store.dispatch('posts/loadComments',{
-            postId: this.post.id,
-        });
-    },
+    // fetch() {
+    //     this.$store.dispatch('posts/loadComments',{
+    //         postId: this.post.id,
+    //     });
+    // },
     methods: {
         onRemovePost(){
             this.$store.dispatch('posts/remove',{
